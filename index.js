@@ -234,6 +234,9 @@ exports.create = function(options = {}) {
     },
     _onChangeText(text) {
       this._request(text);
+      if (text === '') {
+        this.options.onPress(null);
+      }
       this.setState({
         text: text,
         listViewDisplayed: true,

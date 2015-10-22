@@ -333,7 +333,7 @@ exports.create = function(options = {}) {
               placeholder={options.placeholder}
               onBlur={options._onBlur}
               onFocus={options._onFocus}
-              clearButtonMode="while-editing"
+              clearButtonMode='always'
             />
           </View>
           {this._getListView()}

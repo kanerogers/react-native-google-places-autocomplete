@@ -308,13 +308,7 @@ exports.create = function(options = {}) {
         );
       } else {
         return (
-          <View style={styles.poweredContainer}>
-            <Image
-              style={styles.powered}
-              resizeMode={Image.resizeMode.contain}
-              source={require('image!powered_by_google_on_white')}
-            />
-          </View>
+          <View />
         );
         /* jshint ignore:end */
       }

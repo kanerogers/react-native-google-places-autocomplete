@@ -8,13 +8,13 @@ var extend = require('extend');
 
 exports.create = function(options = {}) {
   options.placeholder = options.placeholder || 'Search';
-  options.onPress = options.onPress || () => {};
+  options.onPress = options.onPress || function() { };
   options.minLength = options.minLength || 0;
   options.fetchDetails = options.fetchDetails || false;
   options.autoFocus = options.autoFocus || false;
   options.getDefaultValue = options.getDefaultValue || function() { return ''; };
   options.timeout = options.timeout || 20000;
-  options.onTimeout = options.onTimeout || () => {
+  options.onTimeout = options.onTimeout || function() {
     console.warn('google places autocomplete: request timeout');
   };
 
@@ -26,12 +26,7 @@ exports.create = function(options = {}) {
     container: {
     },
     textInputContainer: {
-      backgroundColor: '#C9C9CE',
       height: 44,
-      borderTopColor: '#7e7e7e',
-      borderBottomColor: '#b5b5b5',
-      borderTopWidth: 0.5,
-      borderBottomWidth: 0.5,
     },
     textInput: {
       backgroundColor: '#FFFFFF',

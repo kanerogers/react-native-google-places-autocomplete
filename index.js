@@ -315,6 +315,7 @@ exports.create = function(options = {}) {
           <View style={styles.textInputContainer}>
             <TextInput
               ref='textInput'
+              autoCorrect={false}
               autoFocus={options.autoFocus}
               style={styles.textInput}
               onChangeText={this._onChangeText}

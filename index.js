@@ -295,6 +295,7 @@ exports.create = function(options = {}) {
         /* jshint ignore:start */
         return (
           <ListView
+            keyboardShouldPersistTaps={true}
             style={styles.listView}
             dataSource={this.state.dataSource}
             renderRow={this._renderRow}

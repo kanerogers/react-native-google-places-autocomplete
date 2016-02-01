@@ -39,6 +39,7 @@ exports.create = function(options = {}) {
       marginTop: 7.5,
       marginLeft: 8,
       marginRight: 8,
+      underlineColorAnroid: 'rgb(56, 179, 152)',
       fontSize: 15,
     },
     poweredContainer: {
